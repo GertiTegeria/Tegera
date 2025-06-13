@@ -2,8 +2,11 @@ import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react'
 import arrowDownSvg from "../../assets/Group 8930.png";
 import logoSvg from "../../assets/logo g-01 3.svg";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+
+  const navigate = useNavigate();
 
 
     const navbarStyles = {
@@ -106,7 +109,7 @@ export default function Navbar() {
                 />
               </li>
               <li style={navbarStyles.navItem}>
-                <a href="#" style={navbarStyles.navLink}>
+                <a href="#" style={navbarStyles.navLink} onClick={() => navigate("/ourActions")}>
                   Company
                 </a>
                 <img

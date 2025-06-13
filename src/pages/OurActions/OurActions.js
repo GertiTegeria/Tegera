@@ -1,7 +1,9 @@
 import React from 'react';
-import aboutUsPlaceholder from './assets/aboutUsPlaceholder.png'; // Example placeholder image
-import Header from './Components /HeaderComponent/Header';
-import GetInTouch from './Components /HeaderComponent/GetInTouch';
+import aboutUsPlaceholder from '../../assets/aboutUsPlaceholder.png'; // Example placeholder image
+import Header from '../../Components /HeaderComponent/Header';
+import GetInTouch from '../../Components /ContactUs/GetInTouch';
+import Navbar from '../../Components /navbar/Navbar';
+import Footer from '../../Components /Footer/Footer';
 
 // CSS Modules styles
 const styles = {
@@ -106,9 +108,11 @@ const ServicesSection = () => {
 const OurActions = () => {
   return (
     <div>
+    <Navbar/>
       <Header headerTitle="Our Actions" />
       <ServicesSection />
       <GetInTouch/>
+      <Footer/>
     </div>
   );
 };

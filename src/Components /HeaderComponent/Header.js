@@ -17,14 +17,14 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center'
   },
-  overlay: {
+ overlay: {
     position: 'absolute',
     top: '0',
     left: '0',
     right: '0',
     bottom: '0',
-    backgroundColor: 'rgba(244, 245, 247, 1)',
-    blur:"2px",
+    backgroundColor: 'rgba(244, 245, 247, 0.9)',
+    mixBlendMode: 'multiply', // Blends with background image
     zIndex: '1'
   },
   title: {

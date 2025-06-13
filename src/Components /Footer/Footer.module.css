@@ -1,0 +1,204 @@
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 60px 20px 40px;
+    margin-top: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  
+  .brandSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .logoIcon {
+    width: 32px;
+    height: 32px;
+    background-color: #2c5282;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .logoText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .tagline {
+    font-size: 14px;
+    color: #718096;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 280px;
+  }
+  
+  .socialSection {
+    margin-top: 8px;
+  }
+  
+  .socialLabel {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .socialLink {
+    width: 36px;
+    height: 36px;
+    background-color: #2d3748;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .socialLink:hover {
+    background-color: #2c5282;
+    transform: translateY(-2px);
+  }
+  
+  .linksSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 20px;
+  }
+  
+  .linksList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .linkItem {
+    margin: 0;
+  }
+  
+  .footerLink {
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+  }
+  
+  .footerLink:hover {
+    color: #2c5282;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 40px;
+    color: #718096;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 20px 30px;
+    }
+    
+    .container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+    
+    .brandSection {
+      align-items: center;
+    }
+    
+    .logo {
+      justify-content: center;
+    }
+    
+    .tagline {
+      max-width: none;
+    }
+    
+    .socialLinks {
+      justify-content: center;
+    }
+    
+    .linksSection {
+      align-items: center;
+    }
+    
+    .linksList {
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 30px 15px 20px;
+    }
+    
+    .container {
+      gap: 30px;
+    }
+    
+    .logoText {
+      font-size: 1.3rem;
+    }
+    
+    .socialLinks {
+      gap: 8px;
+    }
+    
+    .socialLink {
+      width: 32px;
+      height: 32px;
+      font-size: 14px;
+    }
+  }
